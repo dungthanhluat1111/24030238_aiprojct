@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ShowMusic NGƯỜI ĐỢI NGƯỜI VỀ</title>
+  <style>
+    :root {
+      --ink: #29243f;
+      --muted: #68627a;
+      --purple: #6747d4;
+      --pink: #ec6b9c;
+      --line: #e9e3f2;
+      --paper: #fffdf9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 28px 18px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, #eeeaff, #fff1f4 56%, #fff4e9);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    main {
+      width: min(100%, 760px);
+      padding: clamp(28px, 7vw, 62px);
+      border: 1px solid rgba(103, 71, 212, .14);
+      border-radius: 28px;
+      background: var(--paper);
+      box-shadow: 0 24px 70px rgba(48, 39, 93, .12);
+      text-align: center;
+    }
+    h1 {
+      max-width: 620px;
+      margin: 0 auto;
+      font-size: clamp(2rem, 6vw, 3.3rem);
+      line-height: 1.16;
+      letter-spacing: -.04em;
+    }
+    p { margin: 16px 0 32px; color: var(--muted); font-size: 1.08rem; }
+    nav { display: grid; gap: 14px; }
+    a {
+      display: block;
+      padding: 18px 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 1.08rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
+    a:first-child { border-color: transparent; background: var(--purple); color: #fff; }
+    a:hover { transform: translateY(-2px); border-color: var(--pink); background: #fff4f7; }
+    a:first-child:hover { background: #5738c1; }
+    a:focus-visible { outline: 3px solid var(--pink); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { a { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Chào mừng đến với trang web của ShowMusic NGƯỜI ĐỢI NGƯỜI VỀ</h1>
+    <p>Hãy chọn một trang để khám phá.</p>
+    <nav aria-label="Các trang">
+      <a href="YNiem.html">Cảm Nhận Sách Đã Đọc</a>
+      <a href="event.html">Sự kiện</a>
+      <a href="study_plan.html">Bản kế hoạch học tập</a>
+    </nav>
+  </main>
+</body>
+</html>
